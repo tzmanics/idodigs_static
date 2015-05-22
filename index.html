@@ -7,22 +7,25 @@
   <meta name="description" content="A registry for building a home with love">
   <meta name="author" content="tzmanics@gmail.com">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
   <link href='http://fonts.googleapis.com/css?family=Oswald:700,300' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body id="background">
   <header>
-    <div class="title">
-      <p> Annie + Julian's Registry </p>
-   </div>
-    <ul class="basket">
-      <li> Gift Basket </li>
-      <li> Items </li>
-      <li> Total </li>
-      <li> Purchase Gifts </li>
-    </ul>
+    <div class="juliannie">
+      <h1> Annie + Julian</h1>
+    </div>
+    <div class="gift-basket">
+      <div class="gift-header">
+        <a href="" class="basket-menu"> <h1> Gift Basket (</h1>
+        <div class="simpleCart_quantity"></div>
+        <h1>)</h1></a>
+      </div>
+      <div class="simpleCart_items"></div>
+      <a href="javascript:;" class="simpleCart_checkout">PURCHASE GIFTS</a>
+    </div>
   </header>
   <div class="intro-text">
     <p>WELCOME!! You've found this corner of the interwebs that we've carved
@@ -34,184 +37,205 @@
     going to end up becoming the biggest architecture model that we've ever 
     worked on. We are sure to get in WAY over our heads. So to help keep us 
     above that fuzzy line of sweat, tears, desperation and financial destitude, 
-    weve pinpointed a couple of items that will surely be needed. There is no 
+    we've pinpointed a couple of items that will surely be needed. There is no 
     goal #, no cute video or gif to conjole you into giving. Just the 
     opportunity to join us on this ride and be a part of our home.</p>
   </div>
   <div class="gift-list">
-    <div class="gifts">
-      <img src="assets/images/takeout.png">
-      <div class="gift-text">
-        <h3> TAKE OUT </h3>
-        <p> stove is being used to store tools </p>
-        <h3> $5 </h3>
-      </div>
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'TAKE OUT', price: 5.00});">
+        <img src="assets/images/takeout.png"></a>
+      <h3 class="item_name">TAKE OUT</h3>
+      <p> stove is being used to store tools </p>
+      <h3 class="item_price">$5</h3>
     </div>
-    <div class="gifts">
-      <img src="assets/images/6pack.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'SIX PACK', price: 10.00});">
+        <img src="assets/images/6pack.png"></a>
       <div class="gift-text">
-        <h3> SIX PACK </h3>
+        <h3 class="item_name"> SIX PACK </h3>
         <p> for after a long day of renovating </p>
-        <h3> $10 </h3>
+        <h3 class="item_price"> $10 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/tools.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'TOOLS', price: 15.00});">
+        <img src="assets/images/tools.png"></a>
       <div class="gift-text">
-        <h3> TOOLS </h3>
+        <h3 class="item_name"> TOOLS </h3>
         <p> to open said beer :) </p>
-        <h3> $15 </h3>
+        <h3 class="item_price"> $15 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/knobs.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'KNOBS', price: 20.00});">
+        <img src="assets/images/knobs.png"></a>
       <div class="gift-text">
-        <h3> KNOBS </h3>
+        <h3 class="item_name"> KNOBS </h3>
         <p> & hardware aisle impulse purchases </p>
-        <h3> $20 </h3>
+        <h3 class="item_price"> $20 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/faucet.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'FAUCET', price: 30.00});">
+        <img src="assets/images/faucet.png"></a>
       <div class="gift-text">
-        <h3> FAUCET </h3>
+        <h3 class="item_name"> FAUCET </h3>
         <p> i mean we could just use hoses... </p>
-        <h3> $30 </h3>
+        <h3 class="item_price"> $30 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/tiles.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'CERAMIC TILE', price: 40.00});">
+        <img src="assets/images/tiles.png"></a>
       <div class="gift-text">
         <h3> CERAMIC TILE </h3>
         <p> makes water balloon fights ok </p>
         <h3> $40 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/paint.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'PAINT', price: 50.00});">
+        <img src="assets/images/paint.png"></a>
       <div class="gift-text">
         <h3> PAINT </h3>
         <p> color wheels they keep-a-spinning  </p>
         <h3> $50 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/bookshelf.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'BUILT IN SHELVING', price: 50.00});">
+        <img src="assets/images/bookshelf.png"></a>
       <div class="gift-text">
         <h3> BUILT IN SHELVING </h3>
         <p> storage in our closet, of an apartment </p>
         <h3> $50 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/insulation.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'WALL INSULATION', price: 60.00});">
+        <img src="assets/images/insulation.png"></a>
       <div class="gift-text">
         <h3> WALL INSULATION </h3>
         <p> keep us toasty in NYC winters </p>
         <h3> $60 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/hardwood.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'HARD WOOD', price: 70.00});">
+        <img src="assets/images/hardwood.png"></a>
       <div class="gift-text">
         <h3> HARD WOOD </h3>
         <p> we need it, we want it </p>
         <h3> $70 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/floor.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'WOOD FLOORING', price: 75.00});">
+        <img src="assets/images/hardwood.png"></a>
       <div class="gift-text">
         <h3> WOOD FLOORING </h3>
         <p> rent us a drum sander for a day </p>
         <h3> $75 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/brick.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'EXPOSED BRICK WALL', price: 75.00});">
+        <img src="assets/images/brick.png"></a>
       <div class="gift-text">
         <h3> EXPOSED BRICK WALL </h3>
         <p> for that rugged beauty that says we're not that pretentious </p>
         <h3> $75 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/bathtub.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'TUB', price: 75.00});">
+        <img src="assets/images/bathtub.png"></a>
       <div class="gift-text">
         <h3> TUB </h3>
         <p> claw foot, built-in, stall- you get the idea </p>
         <h3> $75 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/doors.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'DOORS', price: 80.00});">
+        <img src="assets/images/doors.png"></a>
       <div class="gift-text">
         <h3> DOORS </h3>
         <p> we're gonna kick 'em down and take names </p>
         <h3> $80 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/light.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'LIGHT FIXTURES', price: 90.00});">
+        <img src="assets/images/light.png"></a>
       <div class="gift-text">
         <h3> LIGHT FIXTURES </h3>
         <p> let there be light! </p>
         <h3> $90 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/furniture.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'FURNITURE', price: 100.00});">
+        <img src="assets/images/furniture.png"></a>
       <div class="gift-text">
         <h3> FURNITURE </h3>
         <p> the alternative is dumpster diving </p>
         <h3> $100 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/windows.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'WINDOWS', price: 100.00});">
+        <img src="assets/images/windows.png"></a>
       <div class="gift-text">
         <h3> WINDOWS </h3>
         <p> onto our beautiful + expansive air-shaft </p>
         <h3> $100 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/plumbing.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'PLUMBING', price: 150.00});">
+        <img src="assets/images/plumbing.png"></a>
       <div class="gift-text">
         <h3> PLUMBING </h3>
         <p> mario + luigi gotta lay some pipe </p>
         <h3> $150 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/electrical.png">
+    <div class="gift-box" "simpleCart_shelfItem">
+      <a href="javascript:;" onclick="simpleCart.add({name:'ELECTRICAL', price: 200.00});">
+        <img src="assets/images/electrical.png"></a>
       <div class="gift-text">
         <h3> ELECTRICAL </h3>
         <p> some things are better left to the professionals </p>
         <h3> $200 </h3>
       </div>
     </div>
-    <div class="gifts">
-      <img src="assets/images/appliances.png">
-      <div class="gift-text">
+    <div class="gift-box">
+      <a href="javascript:;" onclick="simpleCart.add({name:'APPLIANCES', price: 500.00});">
+        <img src="assets/images/appliances.png"></a>
+      <div class="gift-text" "simpleCart_shelfItem">
         <h3> APPLIANCES </h3>
         <p> ha! it's worth a shot- anyone wanna pony up? </p>
         <h3> $500 </h3>
       </div>
     </div>
-    <div class="gifts">
+    <!--<div class="gift-box" "simpleCart_shelfItem">
       <img src="assets/images/gift.png">
       <div class="gift-text">
         <h3> YOUR CHOICE </h3>
         <p> name your price and what you want us to spend it on</p>
         <h3> $ ?  </h3>
       </div>
-    </div>
+      </div> -->
   </div>
   <div class="closing">
-    <h1> THANK YOU! THANK YOU! FOR YOUR GENEROSITY & HELPING US MAKE A HOME!!
+    THANK YOU! THANK YOU! FOR YOUR GENEROSITY & HELPING US MAKE A HOME!!
       LOVE, A+J </h1>
-  </div
+  </div>
+  <script src="assets/js/jquery.1.6.1.min.js"></script>
+  <script src="assets/js/simpleCart.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
 
