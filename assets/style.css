@@ -74,7 +74,7 @@ body#background {
 }
 h1 {
   float: left;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 h3 {
@@ -196,7 +196,7 @@ a.simpleCart_increment, a.simpleCart_decrement {
 
 .gift-text p{
   height: 40px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 
