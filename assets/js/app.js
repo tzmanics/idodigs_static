@@ -2,7 +2,7 @@ $(document).ready(function () {
   simpleCart({
     checkout: {
       type: "PayPal",
-      email: "youarewhatyouart@gmail.com"
+      email: "ani.kountz@gmail.com"
     },
     currency: "USD"
   });
