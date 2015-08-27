@@ -1,9 +1,6 @@
 $(document).ready(function () {
   simpleCart({
-    checkout: {
-      type: "PayPal",
-      email: "ani.kountz@gmail.com"
-    },
+    checkout: { type: "PayPal", email: "ani.kountz@gmail.com" },
     currency: "USD"
   });
 
